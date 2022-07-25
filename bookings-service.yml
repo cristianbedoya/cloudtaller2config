@@ -17,7 +17,7 @@ spring:
             user.password: admin
 server:
   servlet:
-    context-path: /bookings/api/v1
+    context-path: /api/v1
   port: 9070
 eureka:
   client:
