@@ -1,6 +1,6 @@
 spring:
   application:
-    name: movies
+    name: movies-service
   profiles:
     active: dev
   boot:
