@@ -1,6 +1,6 @@
 spring:
   application:
-    name: customer-service
+    name: movies
   profiles:
     active: dev
   boot:
@@ -11,13 +11,13 @@ spring:
         password: admin
         instance:
           service-base-url: http://localhost:9060
-          name: Customer API Service
+          name: Movies API Service
           metadata:
             user.name: admin
             user.password: admin
 server:
   servlet:
-    context-path: /store/api/v1
+    context-path: /movies/api/v1
   port: 9060
 eureka:
   client:
