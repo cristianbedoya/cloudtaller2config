@@ -12,18 +12,18 @@ spring:
           enabled: true
       routes:
         - id: moviesservice
-          uri: lb://movies-service
+          uri: lb://MOVIES-SERVICE
           predicates:
-            - Path=/api/v1/movies/**
+            - Path=/cinema/api/v1/movies/**
         - id: showtimesservice
-          uri: lb://showtimes-service
+          uri: lb://SHOWTIMES-SERVICE
           predicates:
-            - Path=/api/v1/showtimes/**
+            - Path=/cinema/api/v1/showtimes/**
         - id: usersservice
-          uri: lb://users-service
+          uri: lb://USERS-SERVICE
           predicates:
-            - Path=/api/v1/users/**
+            - Path=/cinema/api/v1/users/**
         - id: bookingsservice
           uri: lb://BOOKINGS-SERVICE
           predicates:
-            - Path=/api/v1/bookings/**
+            - Path=/cinema/api/v1/bookings/**
